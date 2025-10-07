@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Import das fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+/* Define altura e reseta margin */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #1e1e1e; /* opcional, Postman usa dark theme */
+  color: #ffffff; /* texto branco padrão */
+  font-family: 'Inter', sans-serif; /* fonte global */
+  font-size: 14px; /* tamanho padrão igual ao Postman */
+  line-height: 1.4;
+}
+
+/* Inputs, caixas de texto e blocos de código usam IBM Plex Mono */
+input, textarea, pre, code, select {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 13px;
+}
+
+/* Para remover estilos muito "grandes" do Angular Material e deixar mais enxuto */
+.mat-mdc-form-field, .mat-mdc-select, .mat-mdc-input-element {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 13px !important;
+}

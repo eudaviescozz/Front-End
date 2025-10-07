@@ -1,0 +1,19 @@
+.auth-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #ddd;
+}
+
+.bearer input {
+  width: 100%;
+  padding: 6px 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  background: #2d2d2d;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+}

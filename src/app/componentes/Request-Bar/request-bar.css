@@ -1,0 +1,65 @@
+.request-bar {
+  display: flex;
+  padding: 10px;
+  background: #2d2d2d;
+  border-radius: 6px;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.method-select {
+  padding: 8px;
+  border: none;
+  background: #1e1e1e;
+  color: #00ff95;
+  font-weight: bold;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+}
+
+.url-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 14px;
+}
+
+.send-group {
+  display: inline-flex;
+}
+
+.send-button,
+.cancel-button {
+  min-width: 100px;
+  padding: 8px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.send-button {
+  background-color: #6f42c1;
+  color: white;
+}
+
+.send-button:hover {
+  background-color: #5a32a3; 
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+#get { color: #28a745; font-weight: bold; }
+#post { color: #ffb400; font-weight: bold; }
+#put { color: #3399ff; font-weight: bold; }
+#patch { color: #cc66ff; font-weight: bold; }
+#delete { color: #ff4d4d; font-weight: bold; }
+#head { color: #ffaa00; font-weight: bold; }
+#options { color: #ff66cc; font-weight: bold; }

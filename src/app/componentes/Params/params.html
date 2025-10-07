@@ -1,0 +1,15 @@
+<div class="params-container">
+  <h2>Query Params</h2>
+
+  <div *ngFor="let param of params; let i = index" class="param-row">
+    <input type="text" placeholder="Key" [(ngModel)]="param.key" />
+    <input type="text" placeholder="Value" [(ngModel)]="param.value" />
+    <input type="text" placeholder="Description" [(ngModel)]="param.description" />
+    <button (click)="removeParam(i)" title="Remover parâmetro">x</button>
+  </div>
+
+  <div class="param-footer">
+    <button (click)="addParam()" class="add-btn">+ Add Param</button>
+    <button class="bulk-btn">Bulk Edit</button>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div>
+  <mat-form-field appearance="fill">
+    <mat-label>Pre-request Script</mat-label>
+    <input matInput [(ngModel)]="preRequestScript" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Test Script</mat-label>
+    <input matInput [(ngModel)]="testScript" />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="executarScripts()">Run Scripts</button>
+</div>

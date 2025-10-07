@@ -1,0 +1,33 @@
+<div class="tabs-container">
+
+  <!-- Request Bar -->
+  <app-request-bar (sendRequest)="onRequest($event)"></app-request-bar>
+
+  <!-- Abas -->
+  <div class="tabs">
+    <button (click)="selectedTab = 'params'" [class.active]="selectedTab === 'params'">
+      Params
+    </button>
+    <button (click)="selectedTab = 'authorization'" [class.active]="selectedTab === 'authorization'">
+      Authorization
+    </button>
+    <button (click)="selectedTab = 'headers'" [class.active]="selectedTab === 'headers'">
+      Headers
+    </button>
+    <button (click)="selectedTab = 'body'" [class.active]="selectedTab === 'body'">
+      Body
+    </button>
+    <button (click)="selectedTab = 'scripts'" [class.active]="selectedTab === 'scripts'">
+      Scripts
+    </button>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="tab-content">
+    <app-authorization *ngIf="selectedTab === 'authorization'"></app-authorization>
+    <app-headers *ngIf="selectedTab === 'headers'"></app-headers>
+    <app-params *ngIf="selectedTab === 'params'"></app-params>
+    <app-body *ngIf="selectedTab === 'body'"></app-body>
+    <app-scripts *ngIf="selectedTab === 'scripts'"></app-scripts>
+  </div>
+</div>

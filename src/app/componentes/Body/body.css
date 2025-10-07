@@ -1,0 +1,11 @@
+.body-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: monospace;
+}

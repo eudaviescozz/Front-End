@@ -1,0 +1,29 @@
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+
+  // Variáveis personalizadas para o tema escuro
+  --color-bg: #12003e;
+  --color-bg-dark: #1d1d2f;
+  --color-primary: #6a00f4;
+  --color-primary-hover: #a259ff;
+  --color-text: #ffffff;
+  --color-muted: #cccccc;
+  --color-danger: #9b80ff;
+  --border-radius: 12px;
+}
+
+body {
+  background: linear-gradient(180deg, var(--color-bg) 0%, #2b004f 100%);
+  color: var(--color-text);
+  font: var(--mat-sys-body-medium);
+  margin: 0;
+}

@@ -1,0 +1,27 @@
+<div class="request-bar">
+  <!-- Select de método -->
+  <select id="get1" class="method-select" [(ngModel)]="requestMethod" 
+          (ngModelChange)="requestMethodChange.emit($event)">
+    <option id="get">GET</option>
+    <option id="post">POST</option>
+    <option id="put">PUT</option>
+    <option id="patch">PATCH</option>
+    <option id="delete">DELETE</option>
+    <option id="head">HEAD</option>
+    <option id="options">OPTIONS</option>
+  </select>
+
+  <!-- Input de URL -->
+  <input type="text" class="url-input" placeholder="Enter URL"
+         [(ngModel)]="requestUrl" 
+         (ngModelChange)="requestUrlChange.emit($event)" />
+
+  <!-- Botão -->
+  <div class="send-group">
+    <button class="send-button"
+            [ngClass]="{ 'cancel-button': isSending }"
+            (click)="onSendClick()">
+      {{ isSending ? 'Cancel' : 'Send' }}
+    </button>
+  </div>
+</div>
